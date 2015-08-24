@@ -1,0 +1,33 @@
+{
+  "name": "countdownjs",
+  "version": "1.0.0",
+  "description": "a JS countdown",
+  "main": "countdown.js",
+  "scripts": {
+    "test": "node --harmony_arrow_functions --harmony ./node_modules/istanbul/lib/cli.js cover _mocha -- -u exports tests/",
+    "coveralls": "node --harmony_arrow_functions --harmony ./node_modules/istanbul/lib/cli.js cover _mocha -- -u exports tests/ && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "engines": {
+    "node": ">=3.x.X"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludoblues/countdown.git"
+  },
+  "keywords": [
+    "countdown"
+  ],
+  "author": "Ludovic VUE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludoblues/countdown/issues"
+  },
+  "homepage": "https://github.com/ludoblues/countdown#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.18",
+    "mocha": "^2.2.5",
+    "sinon": "^1.16.1"
+  }
+}
